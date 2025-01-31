@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahf X Fitness Run Event</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            scroll-behavior: smooth; 
+        }
+        header {
+            position: relative;
+            height: 93vh; 
+            color: white;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: backgroundAnimation 10s infinite; 
+        }
+        @keyframes backgroundAnimation {
+            0% {
+                background: url('kahfbackground.jpeg') no-repeat center center/cover;
+                transform: scale(1); 
+            }
+            50% {
+                background: url('kahfbackgroundproduct.jpg') no-repeat center center/cover;
+                transform: scale(1.1); 
+            }
+            100% {
+                background: url('kahfbackground.jpeg') no-repeat center center/cover;
+                transform: scale(1); 
+            }
+        }
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+			text-align: center;
+        }
+        nav {
+            background-color: #697A21;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #d4d4d4;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .section-button {
+            color: white;
+            border-radius: 8px;
+            padding: 20px 30px; 
+            margin: 20px 0;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.2em; 
+        }
+        .about-button {
+            background-color: #4A7C2A; 
+        }
+        .details-button {
+            background-color: #2A4A7C; 
+        }
+        .entitlements-button {
+            background-color: #7C4A2A;
+        }
+        .requirements-button {
+            background-color: #7C2A4A; 
+        }
+        .products-button {
+            background-color: #2A7C4A; 
+        }
+        .registration-button {
+            background-color: #4A2A7C; 
+        }
+        .contact-button {
+            background-color: #2A7C7C; 
+        }
+        .section-button:hover {
+            transform: scale(1.15);
+        }
+        section {
+            margin: 40px 0;
+            padding: 20px; 
+        }
+        footer {
+            background-color: #697A21;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 20px; 
+            margin-top: 15px;
+        }
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 19px;
+            text-align: center;
+            border: 2px solid #4A7C2A; 
+        }
+        .product-card img {
+            width: 100%; 
+            max-width: 150px; 
+            border-radius: 4px; 
+            padding: 6px; 
+            box-sizing: border-box; 
+        }
+        .entitlements-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 20px; 
+            margin-top: 15px;
+        }
+        .entitlement-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            border: 2px solid #4A7C2A; 
+        }
+        .entitlement-card img {
+            width: 140%; 
+            max-width: 160px; 
+            border-radius: 4px; 
+            padding: 6px; 
+            box-sizing: border-box; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Kahf X Fitness Run</h1>
+    <p>Experience the Thrill of Fitness and Endurance</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#details">Event Details</a>
+    <a href="#entitlements">Entitlements</a>
+    <a href="#requirements">Requirements</a>
+    <a href="#products">Kahf Products</a>
+    <a href="#registration">Registration</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="about">
+        <a href="aboutus.html" class="section-button about-button">About Us</a>
+        <p><strong>Welcome to Kahf X Fitness Run, where passion meets purpose! Join us on a thrilling trip that will push your physical limits while simultaneously celebrating the joys of community spirit and wellness. Whether you're an experienced athlete or just getting started with fitness, this event is for everyone. Experience the pleasure of jogging through gorgeous surroundings and meet like-minded people who share your passion for fitness and wellness.</strong></p>
+    </section>
+
+    <section id="details">
+    <a href="eventdetail.html" class="section-button details-button">Event Details</a>
+    <p>Get ready for an unforgettable experience! Here are the essential details you need to know about the Kahf X Fitness Run.</p>
+    <div style="display: flex; flex-direction: column; align-items: center; max-width: 800px; margin: 0 auto;">
+        <div style="background-color: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin: 10px; width: 100%;">
+            <h3 style="color: #4A7C2A;">Date & Time</h3>
+            <p><strong>24 February 2025</strong><br>Starting at <strong>6:00 AM</strong></p>
+        </div>
+        <div style="background-color: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin: 10px; width: 100%;">
+            <h3 style="color: #4A7C2A;">Location</h3>
+            <p><strong> UiTM REMBAU, NEGERI SEMBILAN </strong></p>
+        </div>
+        <div style="background-color: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); margin: 10px; width: 100%;">
+            <h3 style="color: #4A7C2A;">Registration Fee</h3>
+            <p><strong>MYR 50 - MYR 120</strong> (Based on categories)</p>
+        </div>
+    </div>
+</section>
+
+    <section id="entitlements">
+        <a href="#entitlements" class="section-button entitlements-button">Entitlements & Other</a>
+		<p> As a Kahf X Fitness Run participant, you will be entitled to exclusive benefits that will enhance your race experience! Each runner will get a fashionable event t-shirt, a commemorative finisher's medal, and a lanyard to celebrate their accomplishment. Receive some Kahf items exclusively for the first 50 people and an e-certificate to commemorate your achievement. Join us for a day of exercise, fun, and wonderful rewards!</p>
+        <div class="entitlements-grid">
+            <div class="entitlement-card">
+                <img src="kahfPoster.png" alt="Poster">
+                <p>Exclusive Event Poster to commemorate your participation in the Kahf X Fitness Run Event!"</p>
+            </div>
+            <div class="entitlement-card">
+                <img src="kahfEntitlement.png" alt="Entitlement">
+                <p>Official Event Entitlement to showcase your achievement and pride in completing the Kahf X Fitness Run!</p>
+            </div>
+            <div class="entitlement-card">
+                <img src="kahfSizeChart.png" alt="Size Chart">
+                <p>Size Chart to ensure a perfect fit for your event T-shirt!</p>
+            </div>
+            <div class="entitlement-card">
+                <img src="KahfPrize.png" alt="Prize">
+                <p>Exciting Prizes to be won!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="requirements">
+    <a href="#requirements" class="section-button requirements-button">Requirements</a>
+    <p>To ensure a smooth and enjoyable experience for all participants, please take note of the following requirements:</p>
+    <ul class="list-items" style="list-style-type: none; padding: 0; text-align: left; max-width: 600px; margin: 0 auto;">
+        <li style="background-color: #e7f3e7; border-left: 5px solid #4A7C2A; padding: 10px; margin: 10px 0; border-radius: 5px;">
+            <strong>Age Requirement:</strong> Participants must be <strong>18 years or older</strong> to join the race. This ensures that everyone is ready for the challenge!
+        </li>
+        <li style="background-color: #e7f3e7; border-left: 5px solid #4A7C2A; padding: 10px; margin: 10px 0; border-radius: 5px;">
+            <strong>Arrival Time:</strong> All participants are required to arrive at the venue <strong>30 minutes before</strong> the start time. This allows for check-in and warm-up, setting you up for success!
+        </li>
+        <li style="background-color: #e7f3e7; border-left: 5px solid #4A7C2A; padding: 10px; margin: 10px 0; border-radius: 5px;">
+            <strong>Schedule Modifications:</strong> The event organizers reserve the right to modify the event schedule if necessary. Stay tuned for any updates!
+        </li>
+        <li style="background-color: #e7f3e7; border-left: 5px solid #4A7C2A; padding: 10px; margin: 10px 0; border-radius: 5px;">
+            <strong>No Refunds:</strong> Please note that refunds are not permitted once registration is completed. Make sure you’re ready to run!
+        </li>
+    </ul>
+</section>
+
+    <section id="products">
+        <a href="#products" class="section-button products-button">Kahf Products</a>
+        <p>Explore our exclusive range of Kahf products designed for your active lifestyle.</p>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="kahfbodywash.jpg" alt="Kahf Product 1">
+                <h3>Kahf Gentle Body Wash</h3>
+                <p>Keep your skin refreshed and hydrated after a long run.</p>
+            </div>
+            <div class="product-card">
+                <img src="kahffacewash.jpg" alt="Kahf Product 2">
+                <h3>Kahf Energizing Face Wash</h3>
+                <p>Revitalize your skin after outdoor activities.</p>
+            </div>
+            <div class="product-card">
+                <img src="kahfdeodorant.jpg" alt="Kahf Product 3">
+                <h3>Kahf Deodorant</h3>
+                <p>Stay fresh and confident all day long.</p>
+            </div>
+            <div class="product-card">
+                <img src="kahfperfume.jpg" alt="Kahf Product 4">
+                <h3>Kahf Perfume</h3>
+                <p>Stay fresh and confident all day long.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="registration">
+    <a href="#registration" class="section-button registration-button">Registration</a>
+    <p>Ready to join the excitement? Secure your spot in the Kahf X Fitness Run today!</p>
+    <div style="background-color: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); max-width: 600px; margin: 0 auto;">
+        <h3 style="color: #4A7C2A;">Registration Details</h3>
+        <p><strong>How to Register:</strong> Go to Kahf Malaysia's official Instagram and click the link in their bio.</p>
+<a href="https://www.instagram.com/kahfeveryday.my" style="color: #4A7C2A; text-decoration: underline;">Kahf Malaysia Official Instagram</a>
+        <p><strong>Registration Fee:</strong> MYR 50 - MYR 120 (Based on categories).</p>
+        <a href="https://www.instagram.com/kahfeveryday.my" class="register-btn" target="_blank" style="background-color: #4A7C2A; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 10px;">Register Now</a>
+    </div>
+</section>
+		
+		<section id="contact">
+    <a href="#contact" class="section-button contact-button">Contact Us</a>
+    <p>We’re here to help! If you have any questions or need more information, don’t hesitate to reach out to us.</p>
+    <div style="background-color: #ffffff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); max-width: 600px; margin: 0 auto;">
+        <p><strong>Social Media:</strong> Follow us on our social media channels for updates and announcements!</p>
+        <ul style="list-style-type: none; padding: 0;">
+            <ul>
+    <li><a href="https://www.tiktok.com/kahfeverydaymy" style="color: #4A7C2A; text-decoration: underline;">Official Tiktok</a></li>
+    <li><a href="https://www.instagram.com/kahfeveryday.my" style="color: #4A7C2A; text-decoration: underline;">Official Instagram</a></li>
+    <li><a href="https://www.twitter.com/kahfeveryday" style="color: #4A7C2A; text-decoration: underline;">Official Twitter</a></li>
+</ul>
+        </ul>
+    </div>
+</section>
+    
+
+<footer>
+    <p>&copy; 2025 Kahf X Fitness Run Event. All rights reserved.</p>
+    <p>
+        Follow us on:
+        <a href="https://www.tiktok.com/kahfeverydaymy" target="_blank">Tiktok</a> |
+        <a href="https://www.instagram.com/kahfeveryday.my" target="_blank">Instagram</a> |
+        <a href="https://www.twitter.com/kahfeveryday" target="_blank">Twitter</a>
+    </p>
+</footer>
+
+</body>
+</html>
